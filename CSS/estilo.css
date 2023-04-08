@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-flow:row wrap ;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-self: center;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    text-align: left;
+    flex:20% ;
+    margin-left: 10%;
+}
+.logo h1{
+    font-family: 'Lobster', cursive;
+    color:   #13242b;
+    font-size: 34px;
+
+}
+.menu{
+    flex:70%;
+    margin-top: 20px;
+    text-align: right;
+    padding: 20px;
+
+}
+.menu a{
+    color:  #13242b;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu a:hover{
+    color: #61e2aa;
+    border-top: 4px solid  #61e2aa;
+}
+#botao{
+    border-radius:5px;
+    margin-right: 10%;
+    background:   #13242b;
+    padding: 10px 20px;
+    color:white
+}
+#botao:hover{
+    border: none;
+    background:#61e2aa;
+}
+
+.header{
+    padding-top: 150px;
+    display: flex;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.headline{
+    margin-left: 10%;
+    flex: 40%;
+}
+.headline h2{
+    font-weight: 900;
+    font-size: 20px;
+    color:  #13242b;
+    padding: 0;
+    margin: 0;
+}
+.headline p{
+    color: gray;
+    text-align: left;
+}
+.contact-btn{
+    display: inline-block;
+    background:#61e2aa;
+    padding: 20px; ;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.contact-btn:hover{
+    background:   #13242b;
+}
+.img-headline{
+    margin-right: 10%;
+    flex:40%;
+    text-align: right;
+}
+.img-headline img{
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+section{
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding: 5%;
+}
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family:'Lobster',cursive;
+    font-weight: bold;
+    color:  #13242b;
+}
+
+.servicos{
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card{
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    padding: 5px;
+    border: 1px solid #61e2aa;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #13242b;;
+}
+.texto-oculto{
+    display: none;   
+}
+.card:hover{
+    color: white;
+    background:#61e2aa;
+    padding:40px ;
+}
+.card:hover img{
+    display: none;
+
+}
+.card:hover .card-text{
+    display: none;
+}
+.card:hover .texto-oculto{
+    display: block;
+}
+footer{
+    margin-top: 100px;
+    height: 330px;
+    background-image: linear-gradient(180deg, #148362, #034e38,black );
+    text-align: center;
+    border-top: 5px solid #61e2aa;
+}
+.logo-rodape{
+    font-family: 'Montserrat', sans-serif;
+    padding: 100px;
+}
+
+.agencia{
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 34px;
+}
+.wats{
+    position: fixed;
+    bottom: 5px;
+    right:5px ;
+}
+.wats img{
+    width: 50px;
+
+}
+
+@media screen and (max-width: 1005px){
+    .menu{
+        display: none;
+    }
+    .navbar{
+        position:relative;
+    }
+    .logo{
+        margin: 0;
+        text-align: center;
+    }
+    .header{
+        padding-top: 50px;
+    }
+    .headline{
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+    .headline p{
+        text-align: center;
+    }
+    .img-headline{
+        flex: 100%;
+        margin: 5%;
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+    }
+    .wats{
+        display: none;
+    }
+}
+    
